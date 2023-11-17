@@ -1,17 +1,19 @@
 <template>
 
 
-    <div class="q-pa-md row items-start q-gutter-md">
-      <q-card class="my-card " style="width: 200px;height: 200px;" flat bordered>
-<div style="height: 100px; padding: 10px;"><q-img class="product-image " :ratio="16/9" fit="contain"
+    <div class="q-pa-md row items-end q-gutter-md">
+      <q-card class="my-card " style="width: 200px;height: 270px;border-style: none ;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" >
+<div style="height: 150px; padding: 20px;"><q-img class="product-image " :ratio="16/9" fit="contain"
           :src="item.image"
         /></div>
         
   
         <q-card-section  >
-          <div class=" title " style="">{{ item.title }}</div>
+          <div class=" title " style="color:grey">{{ item.category }}</div>
+          <div class=" title " style="font-weight: ;">{{ item.title }}</div>
           <!-- <div class="text-caption text-grey">{{ item.description }}
              </div> -->
+             <div class=" title " style="color: orange;font-size: 15px;">${{ item.price }}</div>
         </q-card-section>
   
         <!-- <q-card-actions>
@@ -61,6 +63,6 @@
     width: 100%
     max-width: 350px
   .title 
-    font-size: 10px
+    font-size: 11px
   </style>
   

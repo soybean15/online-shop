@@ -1,7 +1,8 @@
+
 <template>
     <q-layout view="lHh Lpr lFf">
       <q-header elevated class="glossy">
-        <q-toolbar>
+        <q-toolbar style="background-color: #1F1F1F;">
           <!-- <q-btn
             flat
             dense
@@ -11,13 +12,14 @@
             icon="menu"
           /> -->
   
-          <q-toolbar-title>
-            Quasar App
+          <q-toolbar-title style="font-family: sans-serif; font-weight: 700;padding-left: 30px;">
+           BIG 
+           <span style="font-family:sans-serif;">BRAND</span>
 
           </q-toolbar-title>
   
          
-          <q-input outlined dense  v-model="text" label="search" class="bg-white search-bar"  />
+          <q-input outlined dense  v-model="text" label="search" class="bg-white search-bar"  style="border-radius: 20px;"/>
         </q-toolbar>
       </q-header>
   
@@ -77,8 +79,8 @@
         </q-list>
       </q-drawer> -->
 
-      <q-container class="q-pa-xl q-mt-xl" >
-        <div class="q-pa-xl q-mt-sm">
+      <q-container class=" " >
+        <div class=" ">
             <router-view></router-view>
         </div>
         
